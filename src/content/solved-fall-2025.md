@@ -446,13 +446,13 @@ P_{80}=\frac{63+67}{2}
 $$
 
 $$
-P_{80=65}
+P_{80}=65
 $$
 
 ### Final Answer
 
 $$
-Q_2=47,\quad D_8=65,\quad P_{80=65}
+Q_2=47,\quad D_8=65,\quad P_{80}=65
 $$
 
 ## Question 3(a)(i) — Box-and-Whisker Plots for X and Y [2 marks]
@@ -582,7 +582,7 @@ Investigate X and Y according to their variability.
 We use the Coefficient of Variation to compare relative variability.
 
 $$
-CV=\frac{SD}{Mean}\times100
+CV=\frac{SD}{Mean}\times 100
 $$
 
 ### A. Sleep Hours (X)
@@ -606,7 +606,7 @@ $$
 Coefficient of Variation:
 
 $$
-CV_X=\frac{2.449}{6.5}\times100
+CV_X=\frac{2.449}{6.5}\times 100
 $$
 
 $$
@@ -630,7 +630,7 @@ $$
 Coefficient of Variation:
 
 $$
-CV_Y=\frac{12.223}{61.625}\times100
+CV_Y=\frac{12.223}{61.625}\times 100
 $$
 
 $$
@@ -933,7 +933,7 @@ $$
 $$
 
 $$
-\bar{x=7.3333}
+\bar{x}=7.3333
 $$
 
 ### Step 2: Calculate Squared Deviations
@@ -1009,11 +1009,11 @@ $$
 Formula:
 
 $$
-CV=\frac{SD}{Mean}\times100
+CV=\frac{SD}{Mean}\times 100
 $$
 
 $$
-CV=\frac{2.9814}{7.3333}\times100
+CV=\frac{2.9814}{7.3333}\times 100
 $$
 
 $$
@@ -1050,7 +1050,7 @@ s=3.0861
 $$
 
 $$
-CV=\frac{3.0861}{7.3333}\times100
+CV=\frac{3.0861}{7.3333}\times 100
 $$
 
 $$

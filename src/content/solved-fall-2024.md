@@ -19,7 +19,7 @@ Clarify population, sample, parameter, statistic, variable and sampling techniqu
 The entire group being studied.
 
 $$
-\text{Population=15,000\text{ university students}}
+\text{Population}=15{,}000\text{ university students}
 $$
 
 **2. Sample**
@@ -27,7 +27,7 @@ $$
 The selected subset of the population.
 
 $$
-\text{Sample=500\text{ selected students}}
+\text{Sample}=500\text{ selected students}
 $$
 
 **3. Parameter**
@@ -37,7 +37,7 @@ A parameter is a numerical characteristic of the entire population.
 Here, it is the true average number of weekly study hours of all 15,000 students.
 
 $$
-\text{Parameter=\mu}
+\text{Parameter}=\mu
 $$
 
 **4. Statistic**
@@ -47,7 +47,7 @@ A statistic is a numerical characteristic calculated from a sample.
 Here, it is the average weekly study hours calculated from the 500 selected students.
 
 $$
-\text{Statistic=\bar{x}}
+\text{Statistic}=\bar{x}
 $$
 
 **5. Variable**
@@ -316,7 +316,7 @@ All three values lie outside the inner fences.
 Therefore:
 
 $$
-\text{Outliers=180,\ 400,\ 480}
+\text{Outliers}=180,\ 400,\ 480
 $$
 
 ### Step 8: Construct the Modified Box Plot
@@ -537,7 +537,7 @@ The new employee's weekly income of $5,000 is an extreme value that significantl
 The median is less affected by extreme observations and therefore provides a more representative measure of the typical employee's weekly income.
 
 $$
-\text{Recommended measure = Median = \$650}
+\text{Recommended measure = Median = }\$650
 $$
 
 ## Question 3(a) — Comparing Relative Dispersion of Samsung and OnePlus [5 marks]
@@ -560,7 +560,7 @@ We will use the Coefficient of Variation (CV).
 Formula:
 
 $$
-CV=\frac{SD{Mean}\times100}
+CV=\frac{SD}{Mean}\times 100
 $$
 
 A smaller CV indicates greater consistency.
@@ -592,7 +592,7 @@ $$
 $$
 
 $$
-\bar{x=78.33}
+\bar{x}=78.33
 $$
 
 ### Step 2: Calculate OnePlus Standard Deviation
@@ -630,7 +630,7 @@ $$
 ### Step 3: Calculate OnePlus CV
 
 $$
-CV=\frac{16.71}{78.33}\times100
+CV=\frac{16.71}{78.33}\times 100
 $$
 
 $$
@@ -656,7 +656,7 @@ $$
 $$
 
 $$
-\bar{x=103.67}
+\bar{x}=103.67
 $$
 
 ### Step 5: Calculate Samsung Standard Deviation
@@ -686,7 +686,7 @@ $$
 ### Step 6: Calculate Samsung CV
 
 $$
-CV=\frac{25.47}{103.67}\times100
+CV=\frac{25.47}{103.67}\times 100
 $$
 
 $$
@@ -785,7 +785,7 @@ P_{80}=\frac{3.7+4.3}{2}
 $$
 
 $$
-P_{80=4.0\text{ hours}}
+P_{80}=4.0\text{ hours}
 $$
 
 ### Conclusion

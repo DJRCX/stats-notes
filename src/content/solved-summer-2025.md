@@ -209,7 +209,7 @@ We will use the grouped frequency table constructed earlier.
 Formula:
 
 $$
-\bar{x=\frac{\sum fx}{N}}
+\bar{x}=\frac{\sum fx}{N}
 $$
 
 Where $x$ is the class midpoint.
@@ -245,7 +245,7 @@ $$
 $$
 
 $$
-\bar{x=48.10\text{ Tk}}
+\bar{x}=48.10\text{ Tk}
 $$
 
 ### B. Median
@@ -330,7 +330,7 @@ $$
 For grouped data:
 
 $$
-Mo=L+\left(\frac{\Delta_1{\Delta_1+\Delta_2}\right)i}
+Mo=L+\left(\frac{\Delta_1}{\Delta_1+\Delta_2}\right)i
 $$
 
 Where:
@@ -522,7 +522,7 @@ P_{80}=\frac{63+67}{2}
 $$
 
 $$
-P_{80=65}
+P_{80}=65
 $$
 
 ### Final Answer
@@ -724,7 +724,7 @@ We can compare their relative variation using the Coefficient of Variation.
 Formula:
 
 $$
-CV=\frac{SD}{Mean}\times100
+CV=\frac{SD}{Mean}\times 100
 $$
 
 Since these observations are treated as samples of students, we will use sample standard deviations.
@@ -744,7 +744,7 @@ $$
 $$
 
 $$
-\bar{x=6.5}
+\bar{x}=6.5
 $$
 
 Sample standard deviation:
@@ -756,7 +756,7 @@ $$
 Coefficient of Variation:
 
 $$
-CV_X=\frac{2.449}{6.5}\times100
+CV_X=\frac{2.449}{6.5}\times 100
 $$
 
 $$
@@ -790,7 +790,7 @@ $$
 Coefficient of Variation:
 
 $$
-CV_Y=\frac{12.223}{61.625}\times100
+CV_Y=\frac{12.223}{61.625}\times 100
 $$
 
 $$
@@ -1161,7 +1161,7 @@ $$
 $$
 
 $$
-\bar{x=4.5}
+\bar{x}=4.5
 $$
 
 Mean of Y:
