@@ -172,17 +172,7 @@ One variable is plotted on the X-axis, while the other variable is plotted on th
 
 ### Types of Scatter Diagrams
 
-**Perfect Positive**
-
-**Perfect Negative**
-
-**Positive Correlation**
-
-**Negative Correlation**
-
-**Zero Correlation**
-
-**Nonlinear Relationship**
+<!-- viz:scatter-types -->
 
 ### Steps to Construct a Scatter Diagram
 
@@ -1091,6 +1081,8 @@ t_{critical}\approx\pm2.306
 $$
 
 **Visual decision rule**
+
+<!-- viz:two-tailed-test -->
 
 **Important correction to your lecturer's document:** It reports a critical value of 1.86 for this example. That value is the one-tailed 5% critical value for 8 degrees of freedom, not the two-tailed 5% value required by $H_1:\rho\neq0$. The correct two-tailed value is approximately 2.306.
 
