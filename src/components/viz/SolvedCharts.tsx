@@ -10,19 +10,7 @@ import {
   YAxis,
 } from "recharts"
 import { ChartShell } from "./ChartShell"
-
-const axis = {
-  stroke: "#71717a",
-  tick: { fill: "#a1a1aa", fontSize: 12 },
-}
-const grid = { stroke: "#27272a", strokeDasharray: "3 3" }
-const tooltipStyle = {
-  backgroundColor: "#18181b",
-  border: "1px solid #3f3f46",
-  borderRadius: 8,
-  color: "#fafafa",
-  fontSize: 12,
-}
+import { getChartTheme } from "./chartTheme"
 
 const socialMedia = [
   { label: "150–199", frequency: 1 },
@@ -114,7 +102,7 @@ export function NumericBoxPlot({
     <ChartShell title={title} description={description}>
       <svg
         viewBox={`0 0 ${viewBoxWidth} ${viewBoxHeight}`}
-        className="mx-auto h-auto w-full max-w-xl text-zinc-100"
+        className="mx-auto h-auto w-full max-w-xl text-foreground"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
@@ -210,6 +198,7 @@ function HistogramChart({
   data: { label: string; frequency: number }[]
   yMax: number
 }) {
+  const { axis, grid, tooltipStyle, cursorFill } = getChartTheme()
   return (
     <ChartShell title={title} description={description}>
       <div className="h-72 w-full">
@@ -222,7 +211,7 @@ function HistogramChart({
               domain={[0, yMax]}
               allowDecimals={false}
             />
-            <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "#27272a" }} />
+            <Tooltip contentStyle={tooltipStyle} cursor={{ fill: cursorFill }} />
             <Bar dataKey="frequency" fill="#60a5fa" radius={[2, 2, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
@@ -238,6 +227,8 @@ function ScatterStudyMarks({
   title: string
   description: string
 }) {
+  const { axis, grid, tooltipStyle } = getChartTheme()
+  const labelFill = axis.tick.fill
   return (
     <ChartShell title={title} description={description}>
       <div className="h-72 w-full">
@@ -255,7 +246,7 @@ function ScatterStudyMarks({
                 value: "Hours studied",
                 position: "insideBottom",
                 offset: -2,
-                fill: "#a1a1aa",
+                fill: labelFill,
                 fontSize: 11,
               }}
             />
@@ -270,7 +261,7 @@ function ScatterStudyMarks({
                 value: "Marks",
                 angle: -90,
                 position: "insideLeft",
-                fill: "#a1a1aa",
+                fill: labelFill,
                 fontSize: 11,
               }}
             />
