@@ -13,6 +13,7 @@ dist-ssr
 *.local
 content-raw.md
 solved-raw.md
+practice-raw.md
 .vercel
 
 # Editor directories and files

@@ -13,6 +13,7 @@ import section_10 from './section-10.md?raw'
 import solved_fall_2025 from './solved-fall-2025.md?raw'
 import solved_summer_2025 from './solved-summer-2025.md?raw'
 import solved_fall_2024 from './solved-fall-2024.md?raw'
+import solved_practice from './solved-practice.md?raw'
 
 export type ChapterSection = { id: string; title: string }
 export type Chapter = {
@@ -136,5 +137,24 @@ export const chapters: Chapter[] = [
     label: "Solved \u2014 Fall 2025",
     sections: [{"id": "question-1-a-population-sample-parameter-statistic-variable-and-data-3-marks", "title": "Question 1(a) — Population, Sample, Parameter, Statistic, Variable and Data [3 marks]"}, {"id": "question-1-b-identify-data-types-and-measurement-levels-2-marks", "title": "Question 1(b) — Identify Data Types and Measurement Levels [2 marks]"}, {"id": "question-2-a-i-construct-a-frequency-distribution-with-cumulative-relative-frequencies-4-marks", "title": "Question 2(a)(i) — Construct a Frequency Distribution with Cumulative Relative Frequencies [4 marks]"}, {"id": "question-2-a-ii-sketch-an-appropriate-graph-2-marks", "title": "Question 2(a)(ii) — Sketch an Appropriate Graph [2 marks]"}, {"id": "question-2-a-iii-mean-median-and-mode-4-marks", "title": "Question 2(a)(iii) — Mean, Median and Mode [4 marks]"}, {"id": "question-2-b-calculate-q-2-d-8-and-p-80-3-marks", "title": "Question 2(b) — Calculate $Q_2,D_8$ and $P_{80}$ [3 marks]"}, {"id": "question-3-a-i-box-and-whisker-plots-for-x-and-y-2-marks", "title": "Question 3(a)(i) — Box-and-Whisker Plots for X and Y [2 marks]"}, {"id": "question-3-a-ii-investigate-x-and-y-according-to-variability-2-marks", "title": "Question 3(a)(ii) — Investigate X and Y According to Variability [2 marks]"}, {"id": "question-3-b-shape-characteristics-of-examination-score-distribution-3-marks", "title": "Question 3(b) — Shape Characteristics of Examination Score Distribution [3 marks]"}, {"id": "question-3-a-five-number-summary-and-box-and-whisker-plot-4-marks", "title": "Question 3(a) — Five-Number Summary and Box-and-Whisker Plot [4 marks]"}, {"id": "question-3-b-variance-standard-deviation-and-coefficient-of-variation-4-marks", "title": "Question 3(b) — Variance, Standard Deviation and Coefficient of Variation [4 marks]"}, {"id": "question-4-a-skewness-and-kurtosis-3-marks", "title": "Question 4(a) — Skewness and Kurtosis [3 marks]"}, {"id": "question-4-b-scatter-diagram-and-pearson-s-correlation-coefficient-4-marks", "title": "Question 4(b) — Scatter Diagram and Pearson's Correlation Coefficient [4 marks]"}, {"id": "5-my-recommendations-for-your-upcoming-exam", "title": "5. My recommendations for your upcoming exam"}],
     markdown: solved_fall_2025,
-  }
+  },
+  {
+    id: 'solved-practice',
+    slug: "solved-midterm-practice",
+    title: "Solved Questions \u2014 Midterm Practice",
+    label: "Solved \u2014 Practice",
+    sections: [
+      {"id": "question-1-identifying-the-key-terms-in-a-statistical-study", "title": "Question 1 – Identifying the Key Terms in a Statistical Study"},
+      {"id": "question-2-sampling-method-measurement-level-and-data-analysis", "title": "Question 2 – Sampling Method, Measurement Level and Data Analysis"},
+      {"id": "question-3-sampling-method-and-measurement-scale-of-temperature", "title": "Question 3 – Sampling Method and Measurement Scale of Temperature"},
+      {"id": "question-4-identifying-data-types", "title": "Question 4 – Identifying Data Types"},
+      {"id": "question-5-frequency-distribution-percentage-mean-and-histogram", "title": "Question 5 – Frequency Distribution, Percentage, Mean and Histogram"},
+      {"id": "question-6-frequency-distribution-percentage-mean-and-histogram", "title": "Question 6 – Frequency Distribution, Percentage, Mean and Histogram"},
+      {"id": "question-7-measures-of-dispersion-and-coefficient-of-variation", "title": "Question 7 – Measures of Dispersion and Coefficient of Variation"},
+      {"id": "question-8-comparing-electricity-bills-using-measures-of-dispersion", "title": "Question 8 – Comparing Electricity Bills Using Measures of Dispersion"},
+      {"id": "question-9-frequency-distribution-cumulative-frequency-relative-frequency-and-graphical-representation", "title": "Question 9 – Frequency Distribution, Cumulative Frequency, Relative Frequency and Graphical Representation"},
+      {"id": "final-revision-sheet-all-9-questions", "title": "Final Revision Sheet – All 9 Questions"},
+    ],
+    markdown: solved_practice,
+  },
 ]

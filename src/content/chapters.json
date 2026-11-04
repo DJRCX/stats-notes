@@ -2,14 +2,14 @@
   {
     "id": "overview",
     "slug": "statistics-complete-exam-study-lessons",
-    "title": "Statistics \u2014 Complete Exam Study Lessons",
+    "title": "Statistics — Complete Exam Study Lessons",
     "label": "Overview",
     "sections": []
   },
   {
     "id": "chapter-1",
     "slug": "chapter-1-introduction-to-statistics",
-    "title": "Chapter 1 \u2014 Introduction to Statistics",
+    "title": "Chapter 1 — Introduction to Statistics",
     "label": "Chapter 1",
     "sections": [
       {
@@ -50,14 +50,14 @@
       },
       {
         "id": "1-10-practice-questions-chapter-1",
-        "title": "1.10 Practice Questions \u2014 Chapter 1"
+        "title": "1.10 Practice Questions — Chapter 1"
       }
     ]
   },
   {
     "id": "chapter-2",
     "slug": "chapter-2-data-presentation",
-    "title": "Chapter 2 \u2014 Data Presentation",
+    "title": "Chapter 2 — Data Presentation",
     "label": "Chapter 2",
     "sections": [
       {
@@ -106,14 +106,14 @@
       },
       {
         "id": "2-12-practice-questions-chapter-2",
-        "title": "2.12 Practice Questions \u2014 Chapter 2"
+        "title": "2.12 Practice Questions — Chapter 2"
       }
     ]
   },
   {
     "id": "chapter-3",
     "slug": "chapter-3-measures-of-central-tendency",
-    "title": "Chapter 3 \u2014 Measures of Central Tendency",
+    "title": "Chapter 3 — Measures of Central Tendency",
     "label": "Chapter 3",
     "sections": [
       {
@@ -162,14 +162,14 @@
       },
       {
         "id": "3-12-practice-questions-chapter-3",
-        "title": "3.12 Practice Questions \u2014 Chapter 3"
+        "title": "3.12 Practice Questions — Chapter 3"
       }
     ]
   },
   {
     "id": "chapter-4",
     "slug": "chapter-4-measures-of-location",
-    "title": "Chapter 4 \u2014 Measures of Location",
+    "title": "Chapter 4 — Measures of Location",
     "label": "Chapter 4",
     "sections": [
       {
@@ -206,14 +206,14 @@
       },
       {
         "id": "4-9-practice-questions-chapter-4",
-        "title": "4.9 Practice Questions \u2014 Chapter 4"
+        "title": "4.9 Practice Questions — Chapter 4"
       }
     ]
   },
   {
     "id": "chapter-5",
     "slug": "chapter-5-measures-of-dispersion",
-    "title": "Chapter 5 \u2014 Measures of Dispersion",
+    "title": "Chapter 5 — Measures of Dispersion",
     "label": "Chapter 5",
     "sections": [
       {
@@ -258,14 +258,14 @@
       },
       {
         "id": "5-11-practice-questions-chapter-5",
-        "title": "5.11 Practice Questions \u2014 Chapter 5"
+        "title": "5.11 Practice Questions — Chapter 5"
       }
     ]
   },
   {
     "id": "chapter-6",
     "slug": "chapter-6-shape-of-the-distribution-skewness-and-kurtosis",
-    "title": "Chapter 6 \u2014 Shape of the Distribution: Skewness and Kurtosis",
+    "title": "Chapter 6 — Shape of the Distribution: Skewness and Kurtosis",
     "label": "Chapter 6",
     "sections": [
       {
@@ -298,14 +298,14 @@
       },
       {
         "id": "6-8-practice-questions-chapter-6",
-        "title": "6.8 Practice Questions \u2014 Chapter 6"
+        "title": "6.8 Practice Questions — Chapter 6"
       }
     ]
   },
   {
     "id": "chapter-7",
     "slug": "chapter-7-correlation-analysis-and-regression",
-    "title": "Chapter 7 \u2014 Correlation Analysis and Regression",
+    "title": "Chapter 7 — Correlation Analysis and Regression",
     "label": "Chapter 7",
     "sections": [
       {
@@ -366,7 +366,7 @@
       },
       {
         "id": "7-17-significance-level",
-        "title": "7.17 Significance Level (\u03b1)"
+        "title": "7.17 Significance Level (α)"
       },
       {
         "id": "7-18-test-statistic",
@@ -390,7 +390,7 @@
       },
       {
         "id": "7-23-practice-questions-chapter-7",
-        "title": "7.23 Practice Questions \u2014 Chapter 7"
+        "title": "7.23 Practice Questions — Chapter 7"
       }
     ]
   },
@@ -402,31 +402,31 @@
     "sections": [
       {
         "id": "chapter-1-introduction",
-        "title": "Chapter 1 \u2014 Introduction"
+        "title": "Chapter 1 — Introduction"
       },
       {
         "id": "chapter-2-data-presentation",
-        "title": "Chapter 2 \u2014 Data Presentation"
+        "title": "Chapter 2 — Data Presentation"
       },
       {
         "id": "chapter-3-central-tendency",
-        "title": "Chapter 3 \u2014 Central Tendency"
+        "title": "Chapter 3 — Central Tendency"
       },
       {
         "id": "chapter-4-measures-of-location",
-        "title": "Chapter 4 \u2014 Measures of Location"
+        "title": "Chapter 4 — Measures of Location"
       },
       {
         "id": "chapter-5-dispersion",
-        "title": "Chapter 5 \u2014 Dispersion"
+        "title": "Chapter 5 — Dispersion"
       },
       {
         "id": "chapter-6-skewness-and-kurtosis",
-        "title": "Chapter 6 \u2014 Skewness and Kurtosis"
+        "title": "Chapter 6 — Skewness and Kurtosis"
       },
       {
         "id": "chapter-7-correlation-and-regression",
-        "title": "Chapter 7 \u2014 Correlation and Regression"
+        "title": "Chapter 7 — Correlation and Regression"
       }
     ]
   },
@@ -454,6 +454,54 @@
       {
         "id": "final-advice",
         "title": "Final advice"
+      }
+    ]
+  },
+  {
+    "id": "solved-practice",
+    "slug": "solved-midterm-practice",
+    "title": "Solved Questions — Midterm Practice",
+    "label": "Solved — Practice",
+    "sections": [
+      {
+        "id": "question-1-identifying-the-key-terms-in-a-statistical-study",
+        "title": "Question 1 – Identifying the Key Terms in a Statistical Study"
+      },
+      {
+        "id": "question-2-sampling-method-measurement-level-and-data-analysis",
+        "title": "Question 2 – Sampling Method, Measurement Level and Data Analysis"
+      },
+      {
+        "id": "question-3-sampling-method-and-measurement-scale-of-temperature",
+        "title": "Question 3 – Sampling Method and Measurement Scale of Temperature"
+      },
+      {
+        "id": "question-4-identifying-data-types",
+        "title": "Question 4 – Identifying Data Types"
+      },
+      {
+        "id": "question-5-frequency-distribution-percentage-mean-and-histogram",
+        "title": "Question 5 – Frequency Distribution, Percentage, Mean and Histogram"
+      },
+      {
+        "id": "question-6-frequency-distribution-percentage-mean-and-histogram",
+        "title": "Question 6 – Frequency Distribution, Percentage, Mean and Histogram"
+      },
+      {
+        "id": "question-7-measures-of-dispersion-and-coefficient-of-variation",
+        "title": "Question 7 – Measures of Dispersion and Coefficient of Variation"
+      },
+      {
+        "id": "question-8-comparing-electricity-bills-using-measures-of-dispersion",
+        "title": "Question 8 – Comparing Electricity Bills Using Measures of Dispersion"
+      },
+      {
+        "id": "question-9-frequency-distribution-cumulative-frequency-relative-frequency-and-graphical-representation",
+        "title": "Question 9 – Frequency Distribution, Cumulative Frequency, Relative Frequency and Graphical Representation"
+      },
+      {
+        "id": "final-revision-sheet-all-9-questions",
+        "title": "Final Revision Sheet – All 9 Questions"
       }
     ]
   }
