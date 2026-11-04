@@ -175,7 +175,7 @@ We will use convenient class intervals of width 50 minutes.
 
 ### Histogram
 
-Frequency distribution of social media usage among 15 students. Use adjacent bars when drawing the actual histogram.
+<!-- viz:social-media-histogram -->
 
 **Interpretation:**
 
@@ -335,6 +335,8 @@ Five-number information:
 | Outliers | 180, 400, 480 |
 
 **Modified Box Plot — Social Media Usage**
+
+<!-- viz:modified-box-social-media -->
 
 **Conclusion:** The dataset contains three suspected outliers: 180, 400 and 480 minutes. The remaining observations range from 250 to 330 minutes.
 
