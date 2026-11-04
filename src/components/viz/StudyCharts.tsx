@@ -13,19 +13,7 @@ import {
   YAxis,
 } from "recharts"
 import { ChartShell } from "./ChartShell"
-
-const axis = {
-  stroke: "#71717a",
-  tick: { fill: "#a1a1aa", fontSize: 12 },
-}
-const grid = { stroke: "#27272a", strokeDasharray: "3 3" }
-const tooltipStyle = {
-  backgroundColor: "#18181b",
-  border: "1px solid #3f3f46",
-  borderRadius: 8,
-  color: "#fafafa",
-  fontSize: 12,
-}
+import { getChartTheme } from "./chartTheme"
 
 const histogram = [
   { label: "10–15", frequency: 7 },
@@ -75,6 +63,7 @@ const population = [
 ]
 
 export function HistogramHours() {
+  const { axis, grid, tooltipStyle, cursorFill } = getChartTheme()
   return (
     <ChartShell
       title="Histogram — Hours Studied"
@@ -86,7 +75,7 @@ export function HistogramHours() {
             <CartesianGrid {...grid} vertical={false} />
             <XAxis dataKey="label" {...axis} />
             <YAxis {...axis} domain={[0, 16]} ticks={[0, 4, 8, 12, 16]} />
-            <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "#27272a" }} />
+            <Tooltip contentStyle={tooltipStyle} cursor={{ fill: cursorFill }} />
             <Bar dataKey="frequency" fill="#60a5fa" radius={[2, 2, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
@@ -96,12 +85,13 @@ export function HistogramHours() {
 }
 
 export function FrequencyPolygonHours() {
+  const { axis, grid, tooltipStyle } = getChartTheme()
   return (
     <ChartShell
       title="Frequency Polygon — Hours Studied"
       description="Connect class midpoint and frequency coordinates."
     >
-      <p className="mb-2 px-2 font-serif text-sm text-zinc-200">
+      <p className="mb-2 px-2 font-serif text-sm text-muted-foreground">
         (12.5, 7), (17.5, 12), (22.5, 7), (27.5, 3), (32.5, 1)
       </p>
       <div className="h-72 w-full">
@@ -126,6 +116,7 @@ export function FrequencyPolygonHours() {
 }
 
 export function LessThanOgive() {
+  const { axis, grid, tooltipStyle } = getChartTheme()
   return (
     <ChartShell
       title="Less Than Ogive — Study Hours"
@@ -153,6 +144,7 @@ export function LessThanOgive() {
 }
 
 export function MoreThanOgive() {
+  const { axis, grid, tooltipStyle } = getChartTheme()
   return (
     <ChartShell
       title="More Than Ogive — Study Hours"
@@ -180,6 +172,7 @@ export function MoreThanOgive() {
 }
 
 export function ShoeBarChart() {
+  const { axis, grid, tooltipStyle, cursorFill } = getChartTheme()
   return (
     <ChartShell
       title="Shoe Sizes Sold"
@@ -191,7 +184,7 @@ export function ShoeBarChart() {
             <CartesianGrid {...grid} vertical={false} />
             <XAxis dataKey="name" {...axis} />
             <YAxis {...axis} domain={[0, 16]} ticks={[0, 4, 8, 12, 16]} />
-            <Tooltip contentStyle={tooltipStyle} cursor={{ fill: "#27272a" }} />
+            <Tooltip contentStyle={tooltipStyle} cursor={{ fill: cursorFill }} />
             <Bar dataKey="value" radius={[4, 4, 0, 0]}>
               {shoes.map((s) => (
                 <Cell key={s.name} fill={s.color} />
@@ -205,6 +198,7 @@ export function ShoeBarChart() {
 }
 
 export function ShoePieChart() {
+  const { tooltipStyle } = getChartTheme()
   return (
     <ChartShell
       title="Distribution of Shoe Sizes"
@@ -237,6 +231,7 @@ export function ShoePieChart() {
 }
 
 export function PopulationTrend() {
+  const { axis, grid, tooltipStyle } = getChartTheme()
   return (
     <ChartShell
       title="Population Trend, 1988–1993"
