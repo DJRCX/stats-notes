@@ -54,13 +54,7 @@ $$
 
 ### Quartile distribution
 
-#### 25%
-
-#### 25%
-
-#### 25%
-
-#### 25%
+<!-- viz:quartile-distribution -->
 
 ### Formula for Quartile Position
 
@@ -391,6 +385,8 @@ A box plot is constructed using five values.
 - Maximum Value.
 
 ### Structure of a box plot
+
+<!-- viz:five-number-boxplot -->
 
 ### Interquartile Range (IQR)
 
