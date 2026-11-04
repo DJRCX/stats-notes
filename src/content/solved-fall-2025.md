@@ -243,7 +243,7 @@ Use the following frequency distribution:
 | 60–69 | 4 |
 | 70–79 | 3 |
 
-Number of days falling into each income interval. Draw adjacent bars for the histogram.
+<!-- viz:mobile-repair-histogram -->
 
 **Interpretation:**
 
@@ -403,7 +403,7 @@ $$
 =\frac{2\times25}{4}=12.5
 $$
 
-Take the next integer position, the 13th observation.
+Take the next integer position, which is the 13th observation.
 
 $$
 Q_2=47
@@ -567,9 +567,9 @@ $$
 
 ### Box Plots
 
-**X — Sleep Hours**
+<!-- viz:sleep-hours-boxplot-fall -->
 
-**Y — Exam Scores**
+<!-- viz:exam-scores-boxplot-fall -->
 
 ## Question 3(a)(ii) — Investigate X and Y According to Variability [2 marks]
 
@@ -896,6 +896,8 @@ Therefore, there are no suspected outliers.
 
 **Box-and-Whisker Plot — Books Read**
 
+<!-- viz:books-read-boxplot -->
+
 **Conclusion:** The middle 50% of students read between 5 and 10 books. No outliers are detected.
 
 ## Question 3(b) — Variance, Standard Deviation and Coefficient of Variation [4 marks]
@@ -1194,7 +1196,7 @@ The X-axis represents hours studied.
 
 The Y-axis represents marks obtained.
 
-Scatter diagram using the Summer 2025 midterm observations.
+<!-- viz:hours-marks-scatter -->
 
 The points generally move upwards from left to right, showing a positive relationship.
 
@@ -1290,16 +1292,16 @@ After solving the papers, these are the recurring topics worth prioritizing.
 
 | Topic | Fall 2024 | Summer 2025 | Fall 2025 |
 | --- | --- | --- | --- |
-| Population and Sample |  | — |  |
-| Data Classification | — |  |  |
-| Frequency Distribution |  |  |  |
-| Mean, Median, Mode |  |  |  |
-| Quartiles and Percentiles |  |  |  |
-| Box Plot and Outliers |  |  |  |
-| Variance and SD |  |  | — |
-| Coefficient of Variation |  |  |  |
-| Skewness and Kurtosis | — |  |  |
-| Pearson Correlation | — |  | — |
+| Population and Sample | ✓ | — | ✓ |
+| Data Classification | — | ✓ | ✓ |
+| Frequency Distribution | ✓ | ✓ | ✓ |
+| Mean, Median, Mode | ✓ | ✓ | ✓ |
+| Quartiles and Percentiles | ✓ | ✓ | ✓ |
+| Box Plot and Outliers | ✓ | ✓ | ✓ |
+| Variance and SD | ✓ | ✓ | — |
+| Coefficient of Variation | ✓ | ✓ | ✓ |
+| Skewness and Kurtosis | — | ✓ | ✓ |
+| Pearson Correlation | — | ✓ | ✓ |
 
 ## 5. My recommendations for your upcoming exam
 
@@ -1327,18 +1329,12 @@ Also, grouped mean, median and mode can differ slightly from calculations using 
 
 **Solution coverage**
 
-# 3
+All three uploaded examination papers have been covered, including their theoretical questions, numerical problems, formulas, calculations, graphs and interpretations.
 
-# 30
-
-# 50
+| Coverage | Count |
+| --- | --- |
+| Exam papers | 3 |
+| Fall 2024 marks | 30 |
+| Other two papers' marks combined | 50 |
 
 **My advice:** Practice the numerical questions from these three papers yourself at least once without looking at the solutions. They are particularly useful because the same concepts appear across different examination sessions, sometimes with different data and slightly different requirements.
-
-If you want, I can:
-
-- Continue with detailed solutions for later exams
-
-- Explain calculation conventions used
-
-- Provide practice exercises based on solved questions
