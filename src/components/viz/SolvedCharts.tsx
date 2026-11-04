@@ -25,22 +25,22 @@ const tooltipStyle = {
 }
 
 const socialMedia = [
-  { label: "150\u2013199", frequency: 1 },
-  { label: "200\u2013249", frequency: 0 },
-  { label: "250\u2013299", frequency: 8 },
-  { label: "300\u2013349", frequency: 4 },
-  { label: "350\u2013399", frequency: 0 },
-  { label: "400\u2013449", frequency: 1 },
-  { label: "450\u2013499", frequency: 1 },
+  { label: "150–199", frequency: 1 },
+  { label: "200–249", frequency: 0 },
+  { label: "250–299", frequency: 8 },
+  { label: "300–349", frequency: 4 },
+  { label: "350–399", frequency: 0 },
+  { label: "400–449", frequency: 1 },
+  { label: "450–499", frequency: 1 },
 ]
 
 const income = [
-  { label: "20\u201329", frequency: 4 },
-  { label: "30\u201339", frequency: 5 },
-  { label: "40\u201349", frequency: 4 },
-  { label: "50\u201359", frequency: 5 },
-  { label: "60\u201369", frequency: 4 },
-  { label: "70\u201379", frequency: 3 },
+  { label: "20–29", frequency: 4 },
+  { label: "30–39", frequency: 5 },
+  { label: "40–49", frequency: 4 },
+  { label: "50–59", frequency: 5 },
+  { label: "60–69", frequency: 4 },
+  { label: "70–79", frequency: 3 },
 ]
 
 const studyMarks = [
@@ -312,7 +312,7 @@ export function DailyIncomeHistogram() {
 export function MobileRepairIncomeHistogram() {
   return (
     <HistogramChart
-      title="Frequency Histogram \u2014 Mobile Repairing Shop Income"
+      title="Frequency Histogram — Mobile Repairing Shop Income"
       description="Number of days falling into each income interval. Draw adjacent bars for the histogram."
       data={income}
       yMax={6}
@@ -341,7 +341,7 @@ export function HoursMarksScatter() {
 export function ModifiedBoxSocialMedia() {
   return (
     <NumericBoxPlot
-      title="Modified Box Plot \u2014 Social Media Usage"
+      title="Modified Box Plot — Social Media Usage"
       description="Conceptual box plot; whisker and outlier positions are labelled in minutes but the drawing is not on a numerical scale."
       min={250}
       q1={275}
@@ -357,8 +357,8 @@ export function ModifiedBoxSocialMedia() {
 export function SleepHoursBoxPlot() {
   return (
     <NumericBoxPlot
-      title="Box-and-Whisker Plot \u2014 Sleep Hours (X)"
-      description="Whiskers indicate minimum and maximum; no outliers are identified using the 1.5 \u00d7 IQR rule."
+      title="Box-and-Whisker Plot — Sleep Hours (X)"
+      description="Whiskers indicate minimum and maximum; no outliers are identified using the 1.5 × IQR rule."
       min={3}
       q1={4.5}
       median={6.5}
@@ -372,8 +372,8 @@ export function SleepHoursBoxPlot() {
 export function ExamScoresBoxPlot() {
   return (
     <NumericBoxPlot
-      title="Box-and-Whisker Plot \u2014 Examination Scores (Y)"
-      description="Whiskers indicate minimum and maximum; no outliers are identified using the 1.5 \u00d7 IQR rule."
+      title="Box-and-Whisker Plot — Examination Scores (Y)"
+      description="Whiskers indicate minimum and maximum; no outliers are identified using the 1.5 × IQR rule."
       min={45}
       q1={51}
       median={61.5}
@@ -387,8 +387,8 @@ export function ExamScoresBoxPlot() {
 export function SleepHoursBoxPlotFall() {
   return (
     <NumericBoxPlot
-      title="Box Plot \u2014 Sleep Hours (X)"
-      description="Both plots have no suspected outliers under the 1.5 \u00d7 IQR rule."
+      title="Box Plot — Sleep Hours (X)"
+      description="Both plots have no suspected outliers under the 1.5 × IQR rule."
       min={3}
       q1={4.5}
       median={6.5}
@@ -402,8 +402,8 @@ export function SleepHoursBoxPlotFall() {
 export function ExamScoresBoxPlotFall() {
   return (
     <NumericBoxPlot
-      title="Box Plot \u2014 Exam Scores (Y)"
-      description="Both plots have no suspected outliers under the 1.5 \u00d7 IQR rule."
+      title="Box Plot — Exam Scores (Y)"
+      description="Both plots have no suspected outliers under the 1.5 × IQR rule."
       min={45}
       q1={51}
       median={61.5}
@@ -417,7 +417,7 @@ export function ExamScoresBoxPlotFall() {
 export function BooksReadBoxPlot() {
   return (
     <NumericBoxPlot
-      title="Box-and-Whisker Plot \u2014 Books Read"
+      title="Box-and-Whisker Plot — Books Read"
       description="Minimum = 3, Q1 = 5, Median = 7, Q3 = 10, Maximum = 13."
       min={3}
       q1={5}
