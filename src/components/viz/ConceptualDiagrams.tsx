@@ -7,12 +7,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts"
-
-const axis = {
-  stroke: "#71717a",
-  tick: { fill: "#a1a1aa", fontSize: 10 },
-}
-const grid = { stroke: "#27272a", strokeDasharray: "3 3" }
+import { getChartTheme } from "./chartTheme"
 
 function SvgShell({
   title,
@@ -27,12 +22,12 @@ function SvgShell({
 }) {
   return (
     <figure
-      className={`not-prose my-6 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950 text-zinc-50 shadow-sm ${className ?? ""}`}
+      className={`not-prose my-6 overflow-hidden rounded-xl border border-border bg-card text-card-foreground shadow-sm ${className ?? ""}`}
     >
-      <figcaption className="space-y-1 border-b border-zinc-800 px-4 py-3">
+      <figcaption className="space-y-1 border-b border-border px-4 py-3">
         <p className="text-sm font-semibold tracking-tight">{title}</p>
         {description ? (
-          <p className="text-xs text-zinc-400">{description}</p>
+          <p className="text-xs text-muted-foreground">{description}</p>
         ) : null}
       </figcaption>
       <div className="px-3 py-4 sm:px-4">{children}</div>
@@ -57,14 +52,14 @@ export function QuartileDistribution() {
         {segments.map((s) => (
           <div
             key={s.label}
-            className="overflow-hidden rounded-lg border border-zinc-800 bg-zinc-900"
+            className="overflow-hidden rounded-lg border border-border bg-muted/40"
           >
             <div className={`h-3 ${s.color}`} />
             <div className="space-y-1 px-3 py-3 text-center">
-              <p className="text-lg font-semibold tabular-nums text-zinc-100">
+              <p className="text-lg font-semibold tabular-nums text-foreground">
                 25%
               </p>
-              <p className="text-xs text-zinc-400">{s.label}</p>
+              <p className="text-xs text-muted-foreground">{s.label}</p>
             </div>
           </div>
         ))}
@@ -81,7 +76,7 @@ export function FiveNumberBoxPlot() {
     >
       <svg
         viewBox="0 0 340 120"
-        className="mx-auto h-auto w-full max-w-xl text-zinc-100"
+        className="mx-auto h-auto w-full max-w-xl text-foreground"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
@@ -179,17 +174,21 @@ export function FiveNumberBoxPlot() {
 export function LowHighCV() {
   return (
     <div className="not-prose my-6 grid gap-3 sm:grid-cols-2">
-      <div className="rounded-xl border border-emerald-900/50 bg-emerald-950/30 p-4 text-zinc-50">
-        <p className="text-sm font-semibold text-emerald-300">Low CV</p>
+      <div className="rounded-xl border border-emerald-600/30 bg-emerald-500/10 p-4 text-foreground dark:border-emerald-900/50 dark:bg-emerald-950/30">
+        <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-300">
+          Low CV
+        </p>
         <p className="mt-1 text-base font-medium">High consistency</p>
-        <p className="mt-2 text-xs leading-relaxed text-zinc-400">
+        <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
           Low relative variability, high uniformity and stability.
         </p>
       </div>
-      <div className="rounded-xl border border-rose-900/50 bg-rose-950/30 p-4 text-zinc-50">
-        <p className="text-sm font-semibold text-rose-300">High CV</p>
+      <div className="rounded-xl border border-rose-600/30 bg-rose-500/10 p-4 text-foreground dark:border-rose-900/50 dark:bg-rose-950/30">
+        <p className="text-sm font-semibold text-rose-700 dark:text-rose-300">
+          High CV
+        </p>
         <p className="mt-1 text-base font-medium">Low consistency</p>
-        <p className="mt-2 text-xs leading-relaxed text-zinc-400">
+        <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
           High relative variability, low uniformity and stability.
         </p>
       </div>
@@ -304,16 +303,17 @@ const scatterCards: {
 ]
 
 export function ScatterTypes() {
+  const { axis, grid } = getChartTheme(10)
   return (
     <div className="not-prose my-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
       {scatterCards.map((card) => (
         <figure
           key={card.kind}
-          className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950 text-zinc-50 shadow-sm"
+          className="overflow-hidden rounded-xl border border-border bg-card text-card-foreground shadow-sm"
         >
-          <figcaption className="border-b border-zinc-800 px-3 py-2">
+          <figcaption className="border-b border-border px-3 py-2">
             <p className="text-sm font-semibold">{card.title}</p>
-            <p className="text-[11px] text-zinc-400">{card.caption}</p>
+            <p className="text-[11px] text-muted-foreground">{card.caption}</p>
           </figcaption>
           <div className="h-40 w-full px-1 pb-1 pt-2">
             <ResponsiveContainer>
@@ -360,7 +360,7 @@ export function TwoTailedTest() {
     >
       <svg
         viewBox="0 0 340 120"
-        className="mx-auto h-auto w-full max-w-xl text-zinc-100"
+        className="mx-auto h-auto w-full max-w-xl text-foreground"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
