@@ -5,6 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Statistics — Exam Study Lessons</title>
+    <script>
+      (() => {
+        try {
+          const stored = localStorage.getItem("stats-notes-theme")
+          const dark =
+            stored === "dark" ||
+            (stored !== "light" &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches)
+          document.documentElement.classList.toggle("dark", dark)
+          document.documentElement.style.colorScheme = dark ? "dark" : "light"
+        } catch {}
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
