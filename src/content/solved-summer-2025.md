@@ -186,7 +186,7 @@ A Histogram is appropriate because the data are quantitative income measurements
 
 Use the frequencies from Question 2(a)(i).
 
-Frequency histogram using 10-Tk class intervals. Bars should touch when drawn as a histogram.
+<!-- viz:daily-income-histogram -->
 
 **Interpretation:**
 
@@ -705,9 +705,9 @@ $$
 
 ### Box-and-Whisker Plots
 
-**Sleep Hours (X)**
+<!-- viz:sleep-hours-boxplot -->
 
-**Examination Scores (Y)**
+<!-- viz:exam-scores-boxplot -->
 
 Both datasets have similar box-and-whisker structures, but they represent different units and scales.
 
@@ -1146,7 +1146,7 @@ $$
 (6,62),(5,61),(7,65),(3,54),(6,63)
 $$
 
-Scatter diagram of 10 students. Each point represents one student's study hours and quiz mark.
+<!-- viz:study-hours-scatter -->
 
 **Observation:** As study hours increase, examination marks generally increase.
 
@@ -1171,7 +1171,7 @@ $$
 $$
 
 $$
-\bar{y=58}
+\bar{y}=58
 $$
 
 ### Step 3: Prepare the Calculation Table
