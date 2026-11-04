@@ -10,11 +10,11 @@ function Shell({
   children: ReactNode
 }) {
   return (
-    <figure className="not-prose my-6 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950 text-zinc-50 shadow-sm">
-      <figcaption className="space-y-1 border-b border-zinc-800 px-4 py-3">
+    <figure className="not-prose my-6 overflow-hidden rounded-xl border border-border bg-card text-card-foreground shadow-sm">
+      <figcaption className="space-y-1 border-b border-border px-4 py-3">
         <p className="text-sm font-semibold tracking-tight">{title}</p>
         {description ? (
-          <p className="text-xs text-zinc-400">{description}</p>
+          <p className="text-xs text-muted-foreground">{description}</p>
         ) : null}
       </figcaption>
       <div className="px-3 py-4 sm:px-4">{children}</div>
@@ -86,7 +86,7 @@ export function SymmetricalDistribution() {
     >
       <svg
         viewBox="0 0 340 120"
-        className="mx-auto h-auto w-full max-w-xl text-zinc-100"
+        className="mx-auto h-auto w-full max-w-xl text-foreground"
         role="img"
         aria-label="Bell-shaped symmetrical distribution with Mean, Median and Mode at the center"
       >
@@ -109,7 +109,7 @@ export function PositiveSkewDistribution() {
     >
       <svg
         viewBox="0 0 340 120"
-        className="mx-auto h-auto w-full max-w-xl text-zinc-100"
+        className="mx-auto h-auto w-full max-w-xl text-foreground"
         role="img"
         aria-label="Right-skewed distribution with Mode, Median and Mean labeled left to right"
       >
@@ -134,7 +134,7 @@ export function NegativeSkewDistribution() {
     >
       <svg
         viewBox="0 0 340 120"
-        className="mx-auto h-auto w-full max-w-xl text-zinc-100"
+        className="mx-auto h-auto w-full max-w-xl text-foreground"
         role="img"
         aria-label="Left-skewed distribution with Mean, Median and Mode labeled left to right"
       >
@@ -178,11 +178,11 @@ export function KurtosisTypes() {
       {curves.map((c) => (
         <figure
           key={c.title}
-          className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950 text-zinc-50 shadow-sm"
+          className="overflow-hidden rounded-xl border border-border bg-card text-card-foreground shadow-sm"
         >
-          <figcaption className="border-b border-zinc-800 px-3 py-2">
+          <figcaption className="border-b border-border px-3 py-2">
             <p className="text-sm font-semibold">{c.title}</p>
-            <p className="text-[11px] text-zinc-400">{c.caption}</p>
+            <p className="text-[11px] text-muted-foreground">{c.caption}</p>
           </figcaption>
           <div className="px-2 py-3">
             <svg

@@ -1,10 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from "react"
-import { ChevronLeft, ChevronRight, PanelLeft } from "lucide-react"
+import { ChevronLeft, ChevronRight, Moon, PanelLeft, Sun } from "lucide-react"
 import { AppSidebar } from "@/components/AppSidebar"
 import { MarkdownView } from "@/components/MarkdownView"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { chapters, type Chapter } from "@/content/chapters"
+import {
+  applyTheme,
+  persistTheme,
+  resolveTheme,
+  type Theme,
+} from "@/lib/theme"
 import { cn } from "@/lib/utils"
 
 const SIDEBAR_KEY = "stats-notes-sidebar-collapsed"
@@ -26,6 +32,7 @@ export default function App() {
   const [active, setActive] = useState<Chapter>(readInitialChapter)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [collapsed, setCollapsed] = useState(readSidebarCollapsed)
+  const [theme, setTheme] = useState<Theme>(() => resolveTheme())
   const contentRef = useRef<HTMLElement>(null)
 
   const index = useMemo(
@@ -50,10 +57,38 @@ export default function App() {
     }
   }
 
+  function toggleTheme() {
+    const next: Theme = theme === "dark" ? "light" : "dark"
+    setTheme(next)
+    applyTheme(next)
+    persistTheme(next)
+  }
+
+  useEffect(() => {
+    applyTheme(theme)
+  }, [theme])
+
   useEffect(() => {
     const onHash = () => setActive(readInitialChapter())
     window.addEventListener("hashchange", onHash)
     return () => window.removeEventListener("hashchange", onHash)
+  }, [])
+
+  useEffect(() => {
+    const media = window.matchMedia("(prefers-color-scheme: dark)")
+    const onChange = () => {
+      try {
+        if (window.localStorage.getItem("stats-notes-theme") == null) {
+          const next = resolveTheme(null)
+          setTheme(next)
+          applyTheme(next)
+        }
+      } catch {
+        // ignore
+      }
+    }
+    media.addEventListener("change", onChange)
+    return () => media.removeEventListener("change", onChange)
   }, [])
 
   return (
@@ -91,10 +126,24 @@ export default function App() {
                 </h1>
               </div>
             </div>
-            <div className="hidden shrink-0 items-center gap-1 sm:flex">
+            <div className="flex shrink-0 items-center gap-1">
+              <Button
+                variant="outline"
+                size="icon"
+                aria-label={
+                  theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+                }
+                title={
+                  theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+                }
+                onClick={toggleTheme}
+              >
+                {theme === "dark" ? <Sun /> : <Moon />}
+              </Button>
               <Button
                 variant="outline"
                 size="sm"
+                className="hidden sm:inline-flex"
                 disabled={!prev}
                 onClick={() => prev && selectChapter(prev)}
               >
@@ -104,6 +153,7 @@ export default function App() {
               <Button
                 variant="outline"
                 size="sm"
+                className="hidden sm:inline-flex"
                 disabled={!next}
                 onClick={() => next && selectChapter(next)}
               >
@@ -119,7 +169,7 @@ export default function App() {
           className="min-h-0 flex-1 overflow-y-auto overscroll-contain"
         >
           <article className="mx-auto w-full max-w-3xl px-4 py-8 sm:px-6 sm:py-10">
-            <MarkdownView markdown={active.markdown} />
+            <MarkdownView key={theme} markdown={active.markdown} />
 
             <Separator className="my-10" />
 
