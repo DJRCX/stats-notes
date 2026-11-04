@@ -637,13 +637,7 @@ Where:
 
 ### Interpretation
 
-# Low CV
-
-**High consistency**
-
-# High CV
-
-**Low consistency**
+<!-- viz:low-high-cv -->
 
 ### Example: Comparing Two Sections
 
