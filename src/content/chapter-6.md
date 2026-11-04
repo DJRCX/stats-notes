@@ -30,6 +30,8 @@ $$
 Mean=Median=Mode
 $$
 
+<!-- viz:symmetrical-distribution -->
+
 Characteristics:
 
 - Both sides have approximately equal shape.
@@ -74,6 +76,8 @@ $$
 Mean>Median>Mode
 $$
 
+<!-- viz:positive-skew -->
+
 **Examples:**
 
 - Income distributions, where a small number of people earn extremely high incomes.
@@ -103,6 +107,8 @@ Relationship:
 $$
 Mean<Median<Mode
 $$
+
+<!-- viz:negative-skew -->
 
 **Example:**
 
@@ -332,6 +338,8 @@ Kurtosis measures the degree of peakness or flatness of a distribution relative 
 In simpler terms, it describes how the distribution's shape around its center compares with a normal distribution.
 
 There are three major types.
+
+<!-- viz:kurtosis-types -->
 
 ### A. Leptokurtic Distribution
 
