@@ -1,3 +1,4 @@
+import { Fragment } from "react"
 import { BookOpen, Menu, PanelLeftClose, PanelLeftOpen, X } from "lucide-react"
 import { chapters, type Chapter } from "@/content/chapters"
 import { cn } from "@/lib/utils"
@@ -29,7 +30,7 @@ export function AppSidebar({
           <BookOpen className="size-4" />
         </div>
         <div className="min-w-0 flex-1">
-          <p className="truncate text-sm font-semibold">Statistics Notes</p>
+          <p className="truncate text-sm font-semibold">Study Notes</p>
           <p className="truncate text-xs text-muted-foreground">Exam study lessons</p>
         </div>
         <Button
@@ -54,11 +55,23 @@ export function AppSidebar({
       <Separator />
       <ScrollArea className="flex-1 px-2 py-3">
         <nav className="flex flex-col gap-0.5" aria-label="Chapters">
-          {chapters.map((chapter) => {
+          {chapters.map((chapter, index) => {
             const active = chapter.id === activeId
+            const startsGroup =
+              index === 0 || chapters[index - 1].group !== chapter.group
             return (
+              <Fragment key={chapter.id}>
+              {startsGroup && (
+                <p
+                  className={cn(
+                    "px-3 pb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground",
+                    index > 0 && "mt-4",
+                  )}
+                >
+                  {chapter.group}
+                </p>
+              )}
               <button
-                key={chapter.id}
                 type="button"
                 onClick={() => {
                   onSelect(chapter)
@@ -74,10 +87,11 @@ export function AppSidebar({
                 <span className="block truncate">{chapter.label}</span>
                 {chapter.label !== chapter.title && (
                   <span className="mt-0.5 block truncate text-xs text-muted-foreground">
-                    {chapter.title.replace(/^Chapter \d+ — /, "").replace(/^\d+\.\s*/, "")}
+                    {chapter.title.replace(/^(Chapter|Part) \d+ — /, "").replace(/^\d+\.\s*/, "")}
                   </span>
                 )}
               </button>
+              </Fragment>
             )
           })}
         </nav>
@@ -119,7 +133,7 @@ export function AppSidebar({
         >
           {mobileOpen ? <X /> : <Menu />}
         </Button>
-        <span className="text-sm font-medium">Statistics Notes</span>
+        <span className="text-sm font-medium">Study Notes</span>
       </div>
 
       {mobileOpen && (

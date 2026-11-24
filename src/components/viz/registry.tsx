@@ -12,6 +12,17 @@ import {
   PositiveSkewDistribution,
   SymmetricalDistribution,
 } from "./DistributionShapes"
+import {
+  CoinChangeOverview,
+  FibRecursionTree,
+  FibRepeatedSubproblems,
+  GreedyVsDpCoins,
+  KnapsackItems,
+  LcsMatching,
+  MemoVsTabulation,
+  ShortestPathSubstructure,
+} from "./DpDiagrams"
+import { DpQuiz, DpStudyChecklist } from "./DpInteractive"
 import { PopulationSample } from "./PopulationSample"
 import {
   BooksReadBoxPlot,
@@ -65,6 +76,16 @@ const registry: Record<string, () => ReactNode> = {
   "sleep-hours-boxplot-fall": () => <SleepHoursBoxPlotFall />,
   "exam-scores-boxplot-fall": () => <ExamScoresBoxPlotFall />,
   "books-read-boxplot": () => <BooksReadBoxPlot />,
+  "dp-fib-recursion-tree": () => <FibRecursionTree />,
+  "dp-memo-vs-tabulation": () => <MemoVsTabulation />,
+  "dp-fib-repeated-subproblems": () => <FibRepeatedSubproblems />,
+  "dp-shortest-path": () => <ShortestPathSubstructure />,
+  "dp-greedy-vs-dp-coins": () => <GreedyVsDpCoins />,
+  "dp-knapsack-items": () => <KnapsackItems />,
+  "dp-lcs-matching": () => <LcsMatching />,
+  "dp-coin-change-overview": () => <CoinChangeOverview />,
+  "dp-quiz": () => <DpQuiz />,
+  "dp-study-checklist": () => <DpStudyChecklist />,
 }
 
 export function renderViz(id: string) {
