@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { ChartShell } from "./ChartShell"
@@ -91,9 +91,15 @@ function ProgressBar({ value, total }: { value: number; total: number }) {
   )
 }
 
+// Survives the remount that MarkdownView gets on theme change.
+let savedQuiz: { answers: Record<number, number>; submitted: boolean } = { answers: {}, submitted: false }
+
 export function DpQuiz() {
-  const [answers, setAnswers] = useState<Record<number, number>>({})
-  const [submitted, setSubmitted] = useState(false)
+  const [answers, setAnswers] = useState<Record<number, number>>(() => savedQuiz.answers)
+  const [submitted, setSubmitted] = useState(() => savedQuiz.submitted)
+  useEffect(() => {
+    savedQuiz = { answers, submitted }
+  }, [answers, submitted])
   const answered = Object.keys(answers).length
   const score = questions.filter((q, i) => answers[i] === q.answer).length
 
