@@ -25,6 +25,21 @@ import {
 import { DpQuiz, DpStudyChecklist } from "./DpInteractive"
 import { PopulationSample } from "./PopulationSample"
 import {
+  ChannelsCalculator,
+  CommPlanSteps,
+  CommunicationTypes,
+  ConflictModes,
+  MaslowPyramid,
+  OrgStructure,
+  RaciMatrix,
+  ResourceLeveling,
+  ResourceProcesses,
+  SlackGantt,
+  TuckmanStages,
+  WorkAssignment,
+} from "./SpmDiagrams"
+import { SpmQuiz, SpmStudyChecklist } from "./SpmInteractive"
+import {
   BooksReadBoxPlot,
   DailyIncomeHistogram,
   ExamScoresBoxPlot,
@@ -86,6 +101,20 @@ const registry: Record<string, () => ReactNode> = {
   "dp-coin-change-overview": () => <CoinChangeOverview />,
   "dp-quiz": () => <DpQuiz />,
   "dp-study-checklist": () => <DpStudyChecklist />,
+  "spm-resource-processes": () => <ResourceProcesses />,
+  "spm-maslow-pyramid": () => <MaslowPyramid />,
+  "spm-org-structure": () => <OrgStructure />,
+  "spm-work-assignment": () => <WorkAssignment />,
+  "spm-raci-matrix": () => <RaciMatrix />,
+  "spm-slack-gantt": () => <SlackGantt />,
+  "spm-resource-leveling": () => <ResourceLeveling />,
+  "spm-tuckman": () => <TuckmanStages />,
+  "spm-conflict-modes": () => <ConflictModes />,
+  "spm-communication-types": () => <CommunicationTypes />,
+  "spm-channels-calculator": () => <ChannelsCalculator />,
+  "spm-comm-plan-steps": () => <CommPlanSteps />,
+  "spm-quiz": () => <SpmQuiz />,
+  "spm-study-checklist": () => <SpmStudyChecklist />,
 }
 
 export function renderViz(id: string) {
