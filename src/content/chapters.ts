@@ -23,6 +23,10 @@ import dp_part_5 from './dp-part-5.md?raw'
 import dp_part_6 from './dp-part-6.md?raw'
 import dp_part_7 from './dp-part-7.md?raw'
 import dp_part_8 from './dp-part-8.md?raw'
+import spm_overview from './spm-overview.md?raw'
+import spm_chapter_9 from './spm-chapter-9.md?raw'
+import spm_chapter_10 from './spm-chapter-10.md?raw'
+import spm_practice from './spm-practice.md?raw'
 
 export type ChapterSection = { id: string; title: string }
 export type Chapter = {
@@ -37,6 +41,7 @@ export type Chapter = {
 
 const STATS_GROUP = "Statistics (STA 101)"
 const DP_GROUP = "Dynamic Programming"
+const SPM_GROUP = "Software Project Management"
 
 export const chapters: Chapter[] = [
   {
@@ -265,5 +270,41 @@ export const chapters: Chapter[] = [
     group: DP_GROUP,
     sections: [{"id": "how-i-recommend-studying-these-topics", "title": "How I recommend studying these topics"}],
     markdown: dp_part_8,
+  },
+  {
+    id: 'spm-overview',
+    slug: "software-project-management-study-guide",
+    title: "Software Project Management \u2014 Study Guide",
+    label: "Overview",
+    group: SPM_GROUP,
+    sections: [{"id": "what-each-chapter-covers", "title": "What each chapter covers"}, {"id": "key-formulas-and-rules-at-a-glance", "title": "Key formulas and rules at a glance"}],
+    markdown: spm_overview,
+  },
+  {
+    id: 'spm-chapter-9',
+    slug: "chapter-9-project-resource-management",
+    title: "Chapter 9 \u2014 Project Resource Management",
+    label: "Chapter 9",
+    group: SPM_GROUP,
+    sections: [{"id": "9-1-what-is-project-resource-management", "title": "9.1 What is Project Resource Management?"}, {"id": "9-2-the-six-resource-management-processes", "title": "9.2 The Six Resource Management Processes"}, {"id": "9-3-maslow-s-hierarchy-of-needs", "title": "9.3 Maslow's Hierarchy of Needs"}, {"id": "9-4-project-organizational-structure", "title": "9.4 Project Organizational Structure"}, {"id": "9-5-covey-s-7-habits-for-project-effectiveness", "title": "9.5 Covey's 7 Habits for Project Effectiveness"}, {"id": "9-6-work-definition-and-assignment-process", "title": "9.6 Work Definition and Assignment Process"}, {"id": "9-7-responsibility-assignment-matrix-raci-chart", "title": "9.7 Responsibility Assignment Matrix (RACI Chart)"}, {"id": "9-8-slack-float-and-the-critical-path", "title": "9.8 Slack (Float) and the Critical Path"}, {"id": "9-9-resource-leveling", "title": "9.9 Resource Leveling"}, {"id": "9-10-developing-the-project-team-tuckman-model", "title": "9.10 Developing the Project Team: Tuckman Model"}, {"id": "9-11-conflict-handling-modes", "title": "9.11 Conflict Handling Modes"}, {"id": "key-points-to-remember", "title": "Key points to remember"}],
+    markdown: spm_chapter_9,
+  },
+  {
+    id: 'spm-chapter-10',
+    slug: "chapter-10-project-communications-management",
+    title: "Chapter 10 \u2014 Project Communications Management",
+    label: "Chapter 10",
+    group: SPM_GROUP,
+    sections: [{"id": "learning-outcomes", "title": "Learning outcomes"}, {"id": "10-1-types-of-communication", "title": "10.1 Types of Communication"}, {"id": "10-2-communication-channels", "title": "10.2 Communication Channels"}, {"id": "10-3-planning-communication-management", "title": "10.3 Planning Communication Management"}, {"id": "10-4-using-effective-communication-media", "title": "10.4 Using Effective Communication Media"}, {"id": "quick-recap", "title": "Quick recap"}],
+    markdown: spm_chapter_10,
+  },
+  {
+    id: 'spm-practice',
+    slug: "practice-questions-quick-revision",
+    title: "Practice Questions & Quick Revision",
+    label: "Practice",
+    group: SPM_GROUP,
+    sections: [{"id": "worked-problems", "title": "Worked problems"}, {"id": "knowledge-check", "title": "Knowledge check"}, {"id": "study-checklist", "title": "Study checklist"}],
+    markdown: spm_practice,
   },
 ]
